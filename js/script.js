@@ -48,61 +48,40 @@ showSlide(slideIndex);
 
 //cards services 
 let cardIndex = 0;
-const cardsPerPage = 2;
-const screenWidthThreshold = 768; 
 
-function showcard() {
-    const screenWidth = window.innerWidth;
-    const cards = document.getElementsByClassName("card");
-    if (screenWidth <= screenWidthThreshold) {
-        for (let i = 0; i < cards.length; i++) {
-            if (i === cardIndex) {
-                cards[i].style.display = "block";
-            } else {
-                cards[i].style.display = "none";
-            }
-        }
-    } else {
-        for (let i = 0; i < cards.length; i++) {
-            if (i >= cardIndex && i < cardIndex + cardsPerPage) {
-                cards[i].style.display = "block";
-            } else {
-                cards[i].style.display = "none";
-            }
-        }
-    }
+function showCard(c) {
+const cards = document.getElementsByClassName("card");
+if (c< 0) {
+cardIndex = cards.length - 1;
+} else if (c >= cards.length) {
+cardIndex = 0;
 }
+for (let i = 0; i < cards.length; i++) {
+    cards[i].style.display = "none";
+}
+cards[cardIndex].style.display = "block";
+}
+
+function nextcard() {
+showCard(++cardIndex);
+}
+
+function prevcard() {
+showCard(--cardIndex);
+}
+
+showCard(cardIndex);
+
 
 function nextCard() {
-    const screenWidth = window.innerWidth;
-    const cards = document.getElementsByClassName("card");
-    if (screenWidth <= screenWidthThreshold) {
-        if (cardIndex < cards.length - 1) {
-            cardIndex++;
-            showcard();
-        }
-    } else {
-        cardIndex = (cardIndex + cardsPerPage) % cards.length;
-        showcard();
+    showCard(++cardIndex);
     }
-}
-
-function prevCard() {
-    const screenWidth = window.innerWidth;
-    const cards = document.getElementsByClassName("card");
-    if (screenWidth <= screenWidthThreshold) {
-        if (cardIndex > 0) {
-            cardIndex--;
-            showcard();
-        }
-    } else {
-        cardIndex = (cardIndex - cardsPerPage + cards.length) % cards.length;
-        showcard();
+    
+    function prevCard() {
+    showCard(--cardIndex);
     }
-}
 
-window.addEventListener('resize', showcard); 
-showcard(); 
+showCard(); 
 
 
 
