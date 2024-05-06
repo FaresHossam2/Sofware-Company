@@ -209,7 +209,7 @@ nav ul li a:hover {
     margin-right: 25px;
 }
 
-@media(max-width:1260px) {
+@media(max-width:1500px) {
     .contact {
         display: none;
     }
@@ -462,7 +462,7 @@ nav ul li a:hover {
 }
 .services .btn{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     max-width: 100%;
 
@@ -477,7 +477,7 @@ nav ul li a:hover {
     background-clip: text;
     display: inline-block;
     -webkit-text-fill-color: transparent;
-    margin-top: 50px;
+    margin: 35px;
 
 }
 
@@ -748,11 +748,12 @@ nav ul li a:hover {
 /* start customers*/
 .customers{
     text-align: center;
-    padding: 70px 0;
+    padding: 50px 0;
+    margin-top: 50px;
 }
 
 .slider-container {
-    padding: 70px 0;
+    padding: 50px 0;
 
 
 }
@@ -784,24 +785,15 @@ text-align: center;
 .slide .span {
     width: 69px;
     height: 5px;
-    gap: 0px;
-    opacity: 0px;
+ 
     background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     position: relative;
     right: -245px;
 
 }
 
-.slide h2 {
-    font-family: Inter;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 55px;
-    text-align: center;
-    margin-bottom: 45px;
 
-}
 
 .slide .bold {
     font-family: Inter;
@@ -889,7 +881,7 @@ text-align: center;
     background-clip: text;
     display: inline-block;
     -webkit-text-fill-color: transparent;
-    margin-top: 50px;
+    margin-top: 10px;
 
 }
 
@@ -916,7 +908,7 @@ text-align: center;
     width: 22.52px;
     height: 20px;
     margin-top: 20px;
-margin-bottom: 25px;
+margin-bottom: 10px;
 }
 
 .slide .people h5 {
@@ -927,7 +919,7 @@ margin-bottom: 25px;
     letter-spacing: -0.005em;
     text-align: center;
     color: #57007B;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 
 }
@@ -936,8 +928,7 @@ font-family: Inter;
 font-size: 16px;
 font-weight: 400;
 text-align: center;
-margin: 0;
-padding: 0;
+
 }
 
 
@@ -946,4 +937,160 @@ padding: 0;
     transition: transform 0.5s ease;
 }
 /* end customers*/
+
+
+/* start case studies*/
+.case{
+    padding: 70px 0;
+}
+.case .container .case-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case h3{
+font-family: Inter;
+font-size: 28px;
+font-weight: 600;
+line-height: 38.09px;
+text-align: left;
+color: #2D3748;
+padding-top: 25px;
+
+}
+.case p {
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height:2;
+text-align: left;
+color: #4A5568;
+padding-top: 25px;
+
+}
+@media(max-width:1200px){
+    .case h3{
+        font-size: 22px;
+        padding-top: 15px;
+        
+        }
+    .case p {
+        padding-top: 15px;
+
+    }
+}
+@media(max-width:992px){
+    .case h3{
+        font-size: 28px;
+        padding-top: 25px;
+        
+        }
+    .case p {
+        padding-top: 25px;
+        line-height: 2.5;
+
+    }
+}
+@media(max-width:768px){
+    .case h3{
+        font-size: 22px;
+        padding-top: 25px;
+        
+        }
+    .case p {
+        padding-top: 15px;
+        line-height: 1.6;
+
+    }
+}
+.case-card{
+    margin-bottom: 35px;
+}
+.recent{
+ width: 723px;
+height: 416px;
+padding: 25px;
+border-radius: 0px 30px 30px 0px;
+border: 1px 0px 0px 0px;
+background: #F1F2FF;
+border: 1px solid #E7DAED;
+position: relative;
+}
+.container .case-card:nth-child(2) .recent {
+    background: #F0FFF7;
+    border: 1px solid #E7DAED
+  }
+  .container .case-card:nth-child(3) .recent {
+    background: #FFF4F4;
+    border: 1px solid #E7DAED
+}
+.case img {
+width: 601px;
+height: 416px;
+top: 3814px;
+left: 104px;
+gap: 0px;
+border-radius: 30px 0px 0px 30px;
+opacity: 0px;
+
+}
+@media(max-width:1200px){
+    .case img {
+        width: 501px;
+    }
+}
+@media(max-width:992px){
+    .case img {
+        display: none;
+    }
+}
+.case .recent .read {
+font-family: Inter;
+font-size: 14px;
+font-weight: 600;
+line-height: 14px;
+text-align: left;
+background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+background-clip: text;
+display: inline-block;
+-webkit-text-fill-color: transparent;
+border: none;
+position: absolute;
+bottom: 65px;
+right: 35px;
+text-transform: capitalize;
+}
+.case .recent .read i {
+    padding-left: 3px;
+}
+@media(max-width:1200px){
+    .case .recent .read {
+        bottom: 25px;
+        right: 35px;
+    }
+}
+@media(max-width:992px){
+    .case .recent .read {
+        bottom: 75px;
+        right: 55px;
+
+    }
+}
+@media(max-width:768px){
+    .case .recent .read {
+      display: none;
+
+    }
+}
+@media(max-width:740px){
+    .case .recent .read {
+        display: block;
+        bottom: 15px;
+        right: 35px;
+
+    }
+}
+
+  
+/* end case studies*/
 
