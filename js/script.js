@@ -16,88 +16,77 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector("nav ul").style.right = "-3000px";
         });
     });
+    // Filter
+    const images = document.querySelectorAll(".tech-images img");
+    const buttons = document.querySelectorAll(".tech .container h5");
+
+    const filterImages = (e) => {
+        const selectedCategory = e.target.dataset.name.toLowerCase();
+        buttons.forEach(btn => btn.classList.remove("active"));
+        e.target.classList.add("active");
+
+        images.forEach(img => {
+            const imgCategory = img.dataset.name.toLowerCase();
+            if (selectedCategory === "all" || imgCategory.includes(selectedCategory)) {
+                img.classList.remove("hide");
+            } else {
+                img.classList.add("hide");
+            }
+        });
+    };
+
+    buttons.forEach(btn => btn.addEventListener("click", filterImages));
+
 });
-   
+
 //reviews
 let slideIndex = 0;
 
 function showSlide(n) {
-const slides = document.getElementsByClassName("slide");
-if (n < 0) {
-slideIndex = slides.length - 1;
-} else if (n >= slides.length) {
-slideIndex = 0;
-}
-for (let i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";
-}
-slides[slideIndex].style.display = "block";
+    const slides = document.getElementsByClassName("slide");
+    if (n < 0) {
+        slideIndex = slides.length - 1;
+    } else if (n >= slides.length) {
+        slideIndex = 0;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
 }
 
 function nextSlide() {
-showSlide(++slideIndex);
+    showSlide(++slideIndex);
 }
 
 function prevSlide() {
-showSlide(--slideIndex);
+    showSlide(--slideIndex);
 }
 
 showSlide(slideIndex);
 
 
 
-//cards services 
-let cardIndex = 0;
 
-function showCard(c) {
-const cards = document.getElementsByClassName("card");
-if (c< 0) {
-cardIndex = cards.length - 1;
-} else if (c >= cards.length) {
-cardIndex = 0;
-}
-for (let i = 0; i < cards.length; i++) {
-    cards[i].style.display = "none";
-}
-cards[cardIndex].style.display = "block";
-}
-
-function nextcard() {
-showCard(++cardIndex);
-}
-
-function prevcard() {
-showCard(--cardIndex);
-}
-
-showCard(cardIndex);
-
-
-function nextCard() {
-    showCard(++cardIndex);
-    }
-    
-    function prevCard() {
-    showCard(--cardIndex);
-    }
-
-showCard(); 
 
 
 
 //logos
 function stopAnimation() {
     var sliders = document.querySelectorAll('.ads .move');
-    sliders.forEach(function(move) {
-      move.addEventListener('mouseover', function() {
-        move.style.animationPlayState = 'paused';
-      });
-  
-      move.addEventListener('mouseout', function() {
-        move.style.animationPlayState = 'running';
-      });
+    sliders.forEach(function (move) {
+        move.addEventListener('mouseover', function () {
+            move.style.animationPlayState = 'paused';
+        });
+
+        move.addEventListener('mouseout', function () {
+            move.style.animationPlayState = 'running';
+        });
     });
-  }
+}
 
 
-  stopAnimation();
+stopAnimation();
+
+
+// filter 

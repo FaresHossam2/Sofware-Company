@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="img/logo.png" type="x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Team</title>
@@ -11,14 +11,11 @@
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Bootstrap Library -->
-    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="css/fa.min.css">
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -26,12 +23,14 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
+
 <body>
     <!-- start header -->
+
     <header>
         <nav>
             <div class="logo">
-                <img src="img/loggo.png" alt="">
+                <img src="img/logo.png" alt="">
             </div>
             <ul>
                 <i id="close" class="fa-solid fa-xmark"></i>
@@ -40,7 +39,7 @@
                 <li><a href="#services">services</a></li>
                 <li><a href="#blog">blog</a></li>
                 <li><a href="#case">case studies</a></li>
-                <li><a href="#how">how it works</a></li>
+                <li><a href="#reviews">reviews</a></li>
             </ul>
             <button class="contact">contact us</button>
             <i id="bar" class="fa-solid fa-bars"></i>
@@ -66,7 +65,7 @@
     <!-- end landing -->
 
     <!-- start services -->
-    <div class="services" id="services">
+    <!-- <div class="services" id="services">
 
         <h2>Services we offer</h2>
 
@@ -136,10 +135,8 @@
             <button class="prev" onclick="prevCard()"><i class="fa-solid fa-chevron-right"></i></button>
             </div> 
        
-    </div>
-
+    </div> -->
     <!-- end services -->
-
     <!-- start develop -->
     <div class="develop" id="about">
         <div class="container">
@@ -169,7 +166,7 @@
                     </div>
 
                 </div>
-                <div class="image">
+                <div class="develop-image">
                     <img src="img/team.jpeg" alt="">
                     <i id="video" class="fa-solid fa-play"></i>
                 </div>
@@ -178,205 +175,365 @@
         </div>
     </div>
     <!-- end develop -->
-
     <!-- start ads -->
-     <div class="ads">
-            <div class="move">
-                <img class="movee" src="img/ads1.png" alt="">
-                <img class="movee"src="img/ads2.png" alt="">
-                <img class="movee"src="img/ads8.png" alt="">
-                <img class="movee"src="img/ads3.png" alt="">
-                <img class="movee"src="img/ads4.png" alt="">
-                <img class="movee" src="img/ads5.png" alt="">
-                <img class="movee"src="img/ads7.png" alt="">
-                <img class="movee"src="img/ads6.png" alt="">
-                <img class="movee"src="img/ads1.png" alt="">
-                <img class="movee"src="img/ads2.png" alt="">
-                <img class="movee"src="img/ads3.png" alt="">
-                <img class="movee"src="img/ads4.png" alt="">
-                <img class="movee"src="img/ads5.png" alt="">
-                <img class="movee"src="img/ads7.png" alt="">
-                <img class="movee"src="img/ads8.png" alt="">
-                <img class="movee"src="img/ads6.png" alt="">
+    <div class="ads">
+        <div class="move">
+            <img class="movee" src="img/ads1.png" alt="">
+            <img class="movee" src="img/ads2.png" alt="">
+            <img class="movee" src="img/ads8.png" alt="">
+            <img class="movee" src="img/ads3.png" alt="">
+            <img class="movee" src="img/ads4.png" alt="">
+            <img class="movee" src="img/ads5.png" alt="">
+            <img class="movee" src="img/ads7.png" alt="">
+            <img class="movee" src="img/ads6.png" alt="">
+            <img class="movee" src="img/ads1.png" alt="">
+            <img class="movee" src="img/ads2.png" alt="">
+            <img class="movee" src="img/ads3.png" alt="">
+            <img class="movee" src="img/ads4.png" alt="">
+            <img class="movee" src="img/ads5.png" alt="">
+            <img class="movee" src="img/ads7.png" alt="">
+            <img class="movee" src="img/ads8.png" alt="">
+            <img class="movee" src="img/ads6.png" alt="">
         </div>
-    </div> 
+    </div>
     <!-- end ads -->
-
-
     <!-- start customers -->
-    <div class="customers">
+    <div class="customers" id="reviews">
         <div class="container">
 
-            <h2>Why cutomers love <br> <span class="bold">  working with us</span>   </h2>
-            
+            <h2>Why cutomers love <br> <span class="bold"> working with us</span> </h2>
+
         </div>
-    <div class="slider-container">
-       
-        <div class="slider">
-          <div class="slide">
-                <i id="left" class="fa-solid fa-quote-right"></i>
-                <p class="review">Without any doubt I recommend Alcaline Solutions
-                    as one of the best web design and digital marketing
-                    agencies. One of the best agencies I’ve come across 
-                    so far.
-                </p> 
-                <i id="right" class="fa-solid fa-quote-left"></i>
-                <div class="people">
-                    <img src="img/man.jpeg" alt="">
-                    <div class="stars">
-                     <img src="img/star.png" alt="">
-                     <img src="img/star.png" alt="">
-                     <img src="img/star.png" alt="">
-                     <img src="img/star.png" alt="">
-                     <img src="img/star.png" alt="">
+        <div class="slider-container">
+
+            <div class="slider">
+                <div class="slide">
+                    <i id="left" class="fa-solid fa-quote-right"></i>
+                    <p class="review">Without any doubt I recommend Alcaline Solutions
+                        as one of the best web design and digital marketing
+                        agencies. One of the best agencies I’ve come across
+                        so far.
+                    </p>
+                    <i id="right" class="fa-solid fa-quote-left"></i>
+                    <div class="people">
+                        <img src="img/man.jpeg" alt="">
+                        <div class="stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <h5>Imran Khan</h5>
+                        <p>Software Engineer</p>
                     </div>
-                    <h5>Imran Khan</h5>
-                    <p>Software Engineer</p>
-            </div>
-          </div>
-          <div class="slide">
-            <i id="left" class="fa-solid fa-quote-right"></i>
-            <p class="review">Alcaline Solutions stands out as a beacon
-                 of excellence in the realm of web design and digital 
-                 marketing. Working with them has been an absolute 
-       
-            </p> 
-            <i id="right" class="fa-solid fa-quote-left"></i>
-            <div class="people">
-                <img src="img/man2.png" alt="">
-                <div class="stars">
-               
-                 <img src="img/star.png" alt="">
-                 <img src="img/star.png" alt="">
-                 <img src="img/star.png" alt="">
                 </div>
-                <h5>Alexander</h5>
-                <p>Mobile App Developer</p>
-        </div>
-      </div>
-      <div class="slide">
-        <i id="left" class="fa-solid fa-quote-right"></i>
-        <p class="review">The website they designed for me not only
-             looks visually stunning but also functions seamlessly
-              across all devices. They incorporated intuitive navigation,
-               engaging content
-        </p> 
-        <i id="right" class="fa-solid fa-quote-left"></i>
-        <div class="people">
-            <img src="img/man3.png" alt="">
-            <div class="stars">
-             <img src="img/star.png" alt="">
-             <img src="img/star.png" alt="">
-             <img src="img/star.png" alt="">
-             <img src="img/star.png" alt="">
-             <img src="img/star.png" alt="">
+                <div class="slide">
+                    <i id="left" class="fa-solid fa-quote-right"></i>
+                    <p class="review">Alcaline Solutions stands out as a beacon
+                        of excellence in the realm of web design and digital
+                        marketing. Working with them has been an absolute
+
+                    </p>
+                    <i id="right" class="fa-solid fa-quote-left"></i>
+                    <div class="people">
+                        <img src="img/man2.png" alt="">
+                        <div class="stars">
+
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <h5>Alexander</h5>
+                        <p>Mobile App Developer</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <i id="left" class="fa-solid fa-quote-right"></i>
+                    <p class="review">The website they designed for me not only
+                        looks visually stunning but also functions seamlessly
+                        across all devices. They incorporated intuitive navigation,
+                        engaging content
+                    </p>
+                    <i id="right" class="fa-solid fa-quote-left"></i>
+                    <div class="people">
+                        <img src="img/man3.png" alt="">
+                        <div class="stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <h5>Benjamin</h5>
+                        <p>DevOps Engineer</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <i id="left" class="fa-solid fa-quote-right"></i>
+                    <p class="review">"Alcaline Solutions exceeded all my
+                        expectations as a web design and digital marketing
+                        agency.
+                    </p>
+                    <i id="right" class="fa-solid fa-quote-left"></i>
+                    <div class="people">
+                        <img src="img/man4.png" alt="">
+                        <div class="stars">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                        <h5>Romeena De Silva</h5>
+                        <p>Systems Analyst</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="next" onclick="nextSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
             </div>
-            <h5>Benjamin</h5>
-            <p>DevOps Engineer</p>
-    </div>
-  </div>
-  <div class="slide">
-    <i id="left" class="fa-solid fa-quote-right"></i>
-    <p class="review">"Alcaline Solutions exceeded all my
-         expectations as a web design and digital marketing
-          agency. 
-    </p> 
-    <i id="right" class="fa-solid fa-quote-left"></i>
-    <div class="people">
-        <img src="img/man4.png" alt="">
-        <div class="stars">
-         <img src="img/star.png" alt="">
-         <img src="img/star.png" alt="">
-         <img src="img/star.png" alt="">
-         <img src="img/star.png" alt="">
-        </div>
-        <h5>Romeena De Silva</h5>
-        <p>Systems Analyst</p>
-</div>
-</div>
-<div class="btn">
-<button class="next" onclick="nextSlide()"><i class="fa-solid fa-chevron-left"></i></button>
-<button class="prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-right"></i></button>
-</div>
+
 
         </div>
-           
-
-      </div>
     </div>
     <!-- end customers -->
-
-
     <!-- start case studies -->
-    <div class="case">
+    <div class="case" id="case">
         <div class="container">
             <div class="circle3"></div>
             <h2>Our recent <br>
-               <span class="bold">Case studies</span>  </h2>
+                <span class="bold">Case studies</span>
+            </h2>
             <div class="case-card">
 
-            <div class="image">
-                <img src="img/case1.jpeg" alt="">
-            </div>
-            <div class="recent">
-                <h3>Website Design for SCFC Canada</h3>
-             <p>Born out of a vision, a single-minded objective
-                 that puts service before anything else, Swift 
-                 Clearance and Forwarding Corp. surging forth to 
-                 deliver the best services in the shipping and 
-                 logistics scenario. Its meteoric rise stems out of
-                  a solid foundation. The management boasts of over 20
-                   years of rich and varied experience in the shipping
-                    and freight forwarding industry.</p>
+                <div class="image">
+                    <img src="img/case1.jpeg" alt="">
+                </div>
+                <div class="recent">
+                    <h3>Website Design for SCFC Canada</h3>
+                    <p>Born out of a vision, a single-minded objective
+                        that puts service before anything else, Swift
+                        Clearance and Forwarding Corp. surging forth to
+                        deliver the best services in the shipping and
+                        logistics scenario. Its meteoric rise stems out of
+                        a solid foundation. The management boasts of over 20
+                        years of rich and varied experience in the shipping
+                        and freight forwarding industry.</p>
                     <button class="read">read more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
-        </div>
-        <div class="case-card">
+            <div class="case-card">
 
-            <div class="image">
-                <img src="img/case2.jpeg" alt="">
-            </div>
-            <div class="recent">
-                <h3>Website Design for SCFC Canada</h3>
-             <p>Born out of a vision, a single-minded objective
-                 that puts service before anything else, Swift 
-                 Clearance and Forwarding Corp. surging forth to 
-                 deliver the best services in the shipping and 
-                 logistics scenario. Its meteoric rise stems out of
-                  a solid foundation. The management boasts of over 20
-                   years of rich and varied experience in the shipping
-                    and freight forwarding industry.</p>
+                <div class="image">
+                    <img src="img/case2.jpeg" alt="">
+                </div>
+                <div class="recent">
+                    <h3>Website Design for SCFC Canada</h3>
+                    <p>Born out of a vision, a single-minded objective
+                        that puts service before anything else, Swift
+                        Clearance and Forwarding Corp. surging forth to
+                        deliver the best services in the shipping and
+                        logistics scenario. Its meteoric rise stems out of
+                        a solid foundation. The management boasts of over 20
+                        years of rich and varied experience in the shipping
+                        and freight forwarding industry.</p>
                     <button class="read">read more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
-        </div>
-        <div class="case-card">
+            <div class="case-card">
 
-            <div class="image">
-                <img src="img/case3.jpeg" alt="">
-            </div>
-            <div class="recent">
-                <h3>Website Design for SCFC Canada</h3>
-             <p>Born out of a vision, a single-minded objective
-                 that puts service before anything else, Swift 
-                 Clearance and Forwarding Corp. surging forth to 
-                 deliver the best services in the shipping and 
-                 logistics scenario. Its meteoric rise stems out of
-                  a solid foundation. The management boasts of over 20
-                   years of rich and varied experience in the shipping
-                    and freight forwarding industry.</p>
+                <div class="image">
+                    <img src="img/case3.jpeg" alt="">
+                </div>
+                <div class="recent">
+                    <h3>Website Design for SCFC Canada</h3>
+                    <p>Born out of a vision, a single-minded objective
+                        that puts service before anything else, Swift
+                        Clearance and Forwarding Corp. surging forth to
+                        deliver the best services in the shipping and
+                        logistics scenario. Its meteoric rise stems out of
+                        a solid foundation. The management boasts of over 20
+                        years of rich and varied experience in the shipping
+                        and freight forwarding industry.</p>
                     <button class="read">read more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- end case studies -->
+      <!-- start software -->
+      <div class="software" id="blog">
+        <div class="line"></div>
+        <h2>Way of building <br>
+            <span class="bold"> Great Software</span>
+        </h2>
+        <div class="content">
+            <div class="text">
+                <h3>Build the right team to scale</h3>
+                <p>Finding the right talent is not easy. We help you find the talent that suits your needs,
+                    follows your processes, and sticks with you long term not the case with freelancers</p>
+                <p>Our <span class="color"> delivery model</span> helps you cut costs and deliver within budget.</p>
+                <p id="color">" Simform is quick to identify larger problem with the Software so we decided to expand
+                    our scope to build new modules "</p>
+                <div class="soft-line"></div>
+                <div class="user">
+                    <img src="img/user1.png" alt="">
+                    <div class="name">
+                        <h5>Jeewa markram</h5>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="yellow-circle"></div>
+                <img src="img/image.jpeg" alt="">
+                <div class="pink-circle"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text" id="rightt">
+                <h3>Build the right team to scale</h3>
+                <p>Finding the right talent is not easy. We help you find the talent that suits your needs,
+                    follows your processes, and sticks with you long term not the case with freelancers</p>
+                <p>Our <span class="color"> delivery model</span> helps you cut costs and deliver within budget.</p>
+                <p id="color">" Simform is quick to identify larger problem with the Software so we decided to expand
+                    our scope to build new modules "</p>
+                <div class="soft-line"></div>
+                <div class="user">
+                    <img src="img/user2.png" alt="">
+                    <div class="name">
+                        <h5>Jeewa markram</h5>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image" id="leftt">
+                <div class="yellow-circle"></div>
+                <img src="img/image 2.jpeg" alt="">
+                <div class="pink-circle"></div>
+            </div>
 
+        </div>
+        <div class="content">
+            <div class="text">
+                <h3>Build the right team to scale</h3>
+                <p>Finding the right talent is not easy. We help you find the talent that suits your needs,
+                    follows your processes, and sticks with you long term not the case with freelancers</p>
+                <p>Our <span class="color"> delivery model</span> helps you cut costs and deliver within budget.</p>
+                <p id="color">" Simform is quick to identify larger problem with the Software so we decided to expand
+                    our scope to build new modules "</p>
+                <div class="soft-line"></div>
+                <div class="user">
+                    <img src="img/user3.png" alt="">
+                    <div class="name">
+                        <h5>Jeewa markram</h5>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="yellow-circle"></div>
+                <img src="img/image 3.jpeg" alt="">
+                <div class="pink-circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end software -->
+    <!-- start tech -->
+    <div class="tech" id="services">
+        <div class="line"></div>
+        <h2>our <br> <span class="bold">tech stack</span></h2>
+        <div class="container">
+            <h5 data-name="All" class="active">All</h5>
+            <h5 data-name="Backend">Backend</h5>
+            <h5 data-name="Frontend">Frontend</h5>
+            <h5 data-name="Databases">Databases</h5>
+            <h5 data-name="CloudTesting">CloudTesting</h5>
+        </div>
+        <div class="tech-images">
+            <div class="container">
+                <img data-name="Backend" src="img/python-removebg-preview.png" alt="">
+                <img data-name="Backend" src="img/node-removebg-preview.png" alt="">
+                <img data-name="Backend" src="img/php-removebg-preview.png" alt="">
+                <img data-name="Backend" src="img/net-removebg-preview.png" alt="">
+                <img data-name="Backend" src="img/c_-removebg-preview.png" alt="">
+                <img data-name="Backend" src="img/java.png" alt="">
+                <img data-name="Backend" src="img/sql.png" alt="">
+                <img data-name="Frontend" src="img/figma-removebg-preview.png" alt="">
+                <img data-name="Frontend" src="img/html-removebg-preview.png" alt="">
+                <img data-name="Frontend" src="img/css-removebg-preview.png" alt="">
+                <img data-name="Frontend" src="img/react-removebg-preview.png" alt="">
+                <img data-name="Frontend" src="img/js-removebg-preview.png" alt="">
+                <img data-name="Frontend" src="img/ts-removebg-preview.png" alt="">
+                <img data-name="CloudTesting" src="img/shark.png " alt="">
+                <img data-name="CloudTesting" src="img/local.png " alt="">
+                <img data-name="CloudTesting" src="img/akamani.png " alt="">
+                <img data-name="CloudTesting" src="img/amazon-removebg-preview.png " alt="">
+                <img data-name="Databases" src="img/redis (1).png " alt="">
+                <img data-name="Databases" src="img/sqll server.png" alt="">
+                <img data-name="Databases" src="img/sql.png " alt="">
+                <img data-name="Databases" src="img/oracle.png " alt="">
+                <img data-name="Databases "style="width: 200px;" src="img/mongo.png " alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end tech -->
 
+      <!-- start feature -->
+      <div class="feature" >
+        <div class="fe-cards">
+            <div class="fe-card">
+                <img src="img/feature1.jpeg" alt="">
+                <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
+                <div class="read">
+                    <h5>read more <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+            <div class="fe-card">
+                <img src="img/feature2.jpeg" alt="">
+                <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
+                <div class="read">
+                    <h5>read more <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+            <div class="fe-card">
+                <img src="img/feature3.jpeg" alt="">
+                <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
+                <div class="read">
+                    <h5>read more <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+            <div class="fe-card">
+                <img src="img/feature4.jpeg" alt="">
+                <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
+                <div class="read">
+                    <h5>read more <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- end feature -->
+    <!-- start hire -->
+    <div class="hire">
+        <div class="container">
+            <div class="content">
+                <h2>Hire the best developers and designers around!</h2>
+                <h3>Hire Top Developers</h3>
+            </div>
 
+        </div>
+
+    </div>
+    <!-- end hire -->
+
+  
+  
 
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
