@@ -72,7 +72,7 @@ header nav {
     align-items: center;
     text-align: center;
     background-color: white;
-    padding: 12px;
+    padding: 25px;
     box-shadow: 0 2px 4px rgba(128, 128, 128, 0.2);
 }
 
@@ -215,12 +215,24 @@ nav ul li a:hover {
 }
 
 /*start landing */
+.landing{
+    height: 100vh;
+
+}
+@media(max-width:992px) {
+    .landing{
+        height: 90vh;
+    
+    }
+
+}
 
 .landing .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    margin-top: 100px;
+
 }
 
 @media(max-width:992px) {
@@ -228,6 +240,8 @@ nav ul li a:hover {
         flex-wrap: wrap;
         text-align: center;
         margin-bottom: 200px;
+        margin-top: 0px;
+
     }
 
 }
@@ -272,7 +286,7 @@ nav ul li a:hover {
     margin-left: 50px;
     animation: moveUpDown 5s linear infinite;
 }
-
+ 
 @keyframes moveUpDown {
 
     0%,
@@ -293,7 +307,7 @@ nav ul li a:hover {
 @media(max-width:992px) {
     .landing img {
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 90px;
         padding-bottom: 35px;
         animation: none;
     }
