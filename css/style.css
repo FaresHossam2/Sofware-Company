@@ -293,24 +293,9 @@ nav ul li a:hover {
     gap: 0px;
     opacity: 1;
     margin-left: 50px;
-    animation: moveUpDown 5s linear infinite;
 }
 
-@keyframes moveUpDown {
 
-    0%,
-    100% {
-        margin-top: 0;
-    }
-
-    10% {
-        margin-top: -50px;
-    }
-
-    90% {
-        margin-top: 50px;
-    }
-}
 
 
 @media(max-width:992px) {
@@ -1021,6 +1006,12 @@ nav ul li a:hover {
     align-items: center;
 }
 
+@media(max-width:992px) {
+    .case .container .case-card {
+        flex-wrap: wrap;
+    }
+}
+
 .case h3 {
     font-family: Inter;
     font-size: 28px;
@@ -1099,13 +1090,13 @@ nav ul li a:hover {
     position: relative;
 }
 
-.container .case-card:nth-child(2) .recent {
+.case #green {
     background: #F0FFF7;
-    border: 1px solid #E7DAED
+    border: 1px solid #F0FFF7
 }
 
-.container .case-card:nth-child(3) .recent {
-    background: #FFF4F4;
+.case .container #move {
+    background: #E7DAED;
     border: 1px solid #E7DAED
 }
 
@@ -1128,7 +1119,10 @@ nav ul li a:hover {
 
 @media(max-width:992px) {
     .case img {
-        display: none;
+        max-width: 100%;
+        height: 316px;
+        border-radius: 10px;
+
     }
 }
 
@@ -1213,11 +1207,12 @@ nav ul li a:hover {
 .software {
     padding: 50px 0;
 }
-@media(max-width:768px){
+
+@media(max-width:768px) {
     .software {
         padding: 30px;
     }
-    }
+}
 
 .software .line {
     position: absolute;
@@ -1225,7 +1220,7 @@ nav ul li a:hover {
     height: 5px;
     background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
     align-items: center;
-    left: 47.5%;
+    left: 40.5%;
 }
 
 .software h2 {
@@ -1243,6 +1238,21 @@ nav ul li a:hover {
     font-weight: 700;
     font-size: 43px;
 
+}
+
+@media(max-width:768px) {
+    .software h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+
+
+    }
+
+    .software .bold {
+        font-weight: 700;
+        font-size: 39px;
+
+    }
 }
 
 .software .content {
@@ -1273,7 +1283,14 @@ nav ul li a:hover {
     max-width: 100%;
 
 }
-
+@media(max-width:768px) {
+    .software .image img {
+        width: 75px;
+        height: 273px;
+       
+    
+    }
+}
 @media(min-width:1200px) {
     .software .content:nth-child(2) {
         display: flex;
@@ -1323,6 +1340,7 @@ nav ul li a:hover {
 
 }
 
+
 .software .color {
     font-family: Inter;
     font-size: 18px;
@@ -1348,6 +1366,14 @@ nav ul li a:hover {
     display: inline-block;
     -webkit-text-fill-color: transparent;
     margin-left: 15px;
+
+}
+
+@media(max-width:768px) {
+    .software #color {
+        font-size: 14px;
+    }
+
 
 }
 
@@ -1404,8 +1430,8 @@ nav ul li a:hover {
 
 @media(max-width:768px) {
     .software .user img {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
 
     }
 }
@@ -1423,7 +1449,7 @@ nav ul li a:hover {
 
 @media(max-width:768px) {
     .software .user h5 {
-        font-size: 20px;
+        font-size: 18px;
 
     }
 }
@@ -1445,6 +1471,14 @@ nav ul li a:hover {
     left: 47.5%;
 }
 
+@media(max-width:768px) {
+    .tech .line {
+        left: 40.5%;
+    }
+
+
+}
+
 .tech h2 {
     font-size: 38px;
     font-weight: 400;
@@ -1457,6 +1491,18 @@ nav ul li a:hover {
 .tech .bold {
     font-weight: 700;
     font-size: 43px;
+
+}
+
+@media(max-width:768px) {
+    .tech h2 {
+        font-size: 35px;
+    }
+
+    .tech .bold {
+        font-size: 36px;
+    
+    }
 
 }
 
@@ -1483,7 +1529,7 @@ nav ul li a:hover {
 
 @media(max-width:992px) {
     .tech .container h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -1513,7 +1559,11 @@ nav ul li a:hover {
         width: 100px;
     }
 }
-
+@media(max-width:768px) {
+    .tech .tech-images img {
+        width: 80px;
+    }
+}
 .tech .tech-images .hide {
     display: none;
 }
@@ -1521,51 +1571,7 @@ nav ul li a:hover {
 /* end tech */
 
 
-/* end hire */
-.hire {
-    padding: 100px 0;
-}
-
-.hire .container .content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1100px;
-    height: 285px;
-    max-width: 100%;
-    border-radius: 20px 0px 0px 0px;
-    background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
-}
-
-.hire h2 {
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 55px;
-    text-align: left;
-    width: 300px;
-}
-
-.hire h3 {
-    width: Fixed (262px)px;
-    height: Fixed (57px)px;
-    top: 10701px;
-    left: 989px;
-    padding: 14px 25px 14px 25px;
-    gap: 10px;
-    border-radius: 5px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    background: linear-gradient(225deg, #FFC656 0%, #F16063 100%);
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
-
-/* end hire */
+/* start feature */
 .feature {
     padding: 35px 0;
 }
@@ -1644,6 +1650,62 @@ nav ul li a:hover {
 }
 
 /*end feature*/
+
+/* start hire */
+.hire {
+    padding: 100px 0;
+}
+
+.hire .container .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    height: 285px;
+    max-width: 100%;
+    border-radius: 20px 0px 0px 0px;
+    background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
+}
+
+.hire h2 {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+    width: 300px;
+}
+
+.hire h3 {
+    width: Fixed (262px)px;
+    height: Fixed (57px)px;
+    padding: 14px 25px 14px 25px;
+    gap: 10px;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: linear-gradient(225deg, #FFC656 0%, #F16063 100%);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+@media(max-width:768px) {
+    .hire h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .hire h3{
+        font-size: 22px;
+
+    }
+}
+
+/* end hire */
+
+/* start footer */
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -1662,13 +1724,16 @@ footer #contact {
     text-decoration: none;
     margin-right: 90px;
 }
+
 footer #contact img {
     margin-bottom: 55px;
     max-width: 100%;
 }
+
 footer #contact p {
     margin-bottom: 35px;
 }
+
 footer .about {
     display: flex;
     flex-direction: column;
@@ -1699,16 +1764,18 @@ footer .accounts {
     margin-left: 50px;
     margin-right: 100px;
 }
+
 footer .accounts h5 {
     margin-top: 25px;
 }
+
 footer .logo {
     margin-bottom: 20px;
     width: 250px;
 }
 
 footer h4 {
-    font-size:  30px;
+    font-size: 30px;
     padding-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
@@ -1720,25 +1787,32 @@ footer p {
     font-size: 17px;
     width: 350px;
 }
-@media(max-width:768px){
+
+@media(max-width:768px) {
     footer p {
         width: 100%;
         margin: 1px;
     }
+    footer h4{
+        font-size: 26px;
+    }
 }
+
 footer .follow {
     margin-top: 130px;
     padding-right: 10px;
     cursor: pointer;
 
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     footer .follow {
         margin-top: 70px;
-       
-    
+
+
     }
 }
+
 footer .follow h4 {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -1763,21 +1837,25 @@ footer .follow i {
     margin-top: 180px;
     margin-right: 50px;
 }
-@media(max-width:1300px){
+
+@media(max-width:1300px) {
     .social {
         margin-top: 70px;
         margin-right: 50px;
     }
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .social {
         margin: 30px;
         margin-top: 50px;
-       
+
     }
 }
+
 footer .about h4,
 .contact h4,
 .install h4 {
     text-transform: uppercase;
 }
+/* end footer */
