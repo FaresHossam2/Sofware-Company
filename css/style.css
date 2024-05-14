@@ -1121,7 +1121,12 @@ nav ul li a:hover {
     .case img {
         max-width: 100%;
         height: 316px;
-        border-radius: 10px;
+            border-radius: 0px 30px 0px 0px;
+
+
+    }
+    .recent{
+        border-radius: 30px 0px 0px 30px;
 
     }
 }
